@@ -1,0 +1,43 @@
+#main-container{
+    max-width: 1520px;
+    margin: auto;
+}
+body{
+    background-color: #6341DE;
+}
+#cont{
+    background-color: #6341DE;
+    padding: 60px;
+    width: 1920;
+    text-align: left;
+    height: 900px;
+}
+.copa{
+    color: #F56B21;
+    font-family: sans-serif;
+    font-size: 35px;
+    position: relative;
+}
+#bobo{
+    bottom: 20%;
+    right: 150px; 
+    position: fixed;
+    bottom: 10px;
+}
+#mo{
+    display: flex;
+    justify-content: flex-end;
+}
+.x{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.pos{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}

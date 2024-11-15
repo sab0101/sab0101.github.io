@@ -1,0 +1,42 @@
+#main-container{
+    max-width: 1520px;
+    margin: auto;
+}
+body{
+    background-color: #F7E439;
+}
+#bobo{
+    bottom: 20%;
+    right: 150px; 
+    position: fixed;
+    bottom: 10px;
+}
+#mo{
+    display: flex;
+    justify-content: flex-end;
+}
+.x{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.raw{
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 35px;
+    position: relative;
+    margin-top: 50px;
+}
+#fuzzy{
+    text-align: center;
+}
+.chicho{
+    text-align: left;
+}
+#luje{
+    margin-top: 100px;
+}
