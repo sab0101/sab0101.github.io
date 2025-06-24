@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
 #contenedor{
     display: grid;
     background-color: #F7E439;

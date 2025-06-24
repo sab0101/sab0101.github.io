@@ -1,3 +1,18 @@
+/* Estilos responsive (añade esto a tu CSS existente) */
+@media (max-width: 600px) { /* Para móviles */
+  body {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) { /* Para PCs */
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+}
 body{
     background-color: #6341DE;
 }
