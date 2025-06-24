@@ -1,71 +1,119 @@
-/* Estilos responsive (añade esto a tu CSS existente) */
-@media (max-width: 600px) { /* Para móviles */
-  body {
-    font-size: 14px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6341DE;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+#conteiner {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#naranja {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  min-height: 500px;
+  border-radius: 0 325px 325px 0;
+  background-color: #F56B21;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cs1 {
+  font-size: clamp(2.5rem, 10vw, 90px);
+  color: white;
+  margin: 1rem 0 0 1rem;
+}
+
+.cs2 {
+  font-size: clamp(1.2rem, 4vw, 40px);
+  color: #E9E936;
+  margin: 1rem 0 0 1rem;
+}
+
+#cir1, #cir2 {
+  position: absolute;
+  z-index: 1;
+}
+
+#cir1 {
+  top: -5%;
+  right: 5%;
+  width: clamp(100px, 20vw, 200px);
+}
+
+#cir2 {
+  bottom: 10%;
+  left: 10%;
+  width: clamp(100px, 20vw, 200px);
+}
+
+#cir1 img, #cir2 img {
+  width: 100%;
+  height: auto;
+}
+
+#boton {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 471px;
+  z-index: 2;
+}
+
+.x {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #42D918;
+  border: none;
+  border-radius: 325px;
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.x:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  #naranja {
+    border-radius: 0 200px 200px 0;
   }
-  header h1 {
-    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #naranja {
+    border-radius: 0 100px 100px 0;
+    min-height: 400px;
+  }
+  #cir1 {
+    right: -10%;
   }
 }
-@media (min-width: 1024px) { /* Para PCs */
-  .container {
-    display: flex;
-    gap: 20px;
+
+@media (max-width: 480px) {
+  #naranja {
+    border-radius: 0 50px 50px 0;
+    min-height: 300px;
   }
-}
-body{
-    background-color: #6341DE;
-}
-#in{
-     bottom: 50px;
-     right: 500px;
-}
-#naranja{
-    width: 1100px;
-    height: 500px;
-    border-radius: 0px 325px 325px 0px ;
-    background-color: #F56B21;
-    position: absolute;
-    top: 150px;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-#boton{
-    position: fixed;
-    bottom: 50px;
-    left: 750px;
-}
-.x{
-    color: white;
-    font-family: sans-serif;
-}
-*{
-    padding: 0px;
-    margin: 0px;
-}
-.cs1{
-    font-size: 90px;
-    color: white;
-    margin-top: 100px;
-    margin-left: 50px;
-}
-.cs2{
-    font-size: 40px;
-    color: #E9E936 ;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-#conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-#cir1{
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-#cir2{
-    grid-column: 3/6;
-    grid-row: 2/3;
+  .cs1, .cs2 {
+    margin-left: 0.5rem;
+  }
 }
