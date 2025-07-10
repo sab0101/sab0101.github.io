@@ -1,0 +1,84 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling para enlaces de navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Efecto de aparición al hacer scroll
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.service-card, .achievement-card, .gallery-item, .contact-card');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementPosition < windowHeight - 100) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    };
+    
+    // Configuración inicial para animaciones
+    const serviceCards = document.querySelectorAll('.service-card');
+    const achievementCards = document.querySelectorAll('.achievement-card');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const contactCards = document.querySelectorAll('.contact-card');
+    
+    [serviceCards, achievementCards, galleryItems, contactCards].forEach(group => {
+        group.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        });
+    });
+    
+    // Ejecutar al cargar y al hacer scroll
+    animateOnScroll();
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Galería modal (opcional)
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" src="" alt="">
+        <div class="caption"></div>
+    `;
+    document.body.appendChild(modal);
+    
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            const modalImg = modal.querySelector('.modal-content');
+            const captionText = modal.querySelector('.caption');
+            
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.textContent = this.alt;
+        });
+    });
+    
+    modal.querySelector('.close-modal').addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
