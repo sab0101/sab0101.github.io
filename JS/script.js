@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ],
 
+            // Sección Galería
+            'gallery_title': 'Eventos y Talleres',
+
             // Sección Contratación
             'hiring_title': 'Contratación',
             'hiring_steps': [
@@ -131,6 +134,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ],
 
+            // Gallery section
+            'gallery_title': 'Events and Workshops',
+
             // Hiring section
             'hiring_title': 'Hiring Process',
             'hiring_steps': [
@@ -191,7 +197,10 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `).join('');
 
-        // 5. Actualizar sección Contratación
+        // 5. Actualizar sección Galería
+        document.querySelector('#galeria h2').textContent = translations[lang]['gallery_title'];
+
+        // 6. Actualizar sección Contratación
         document.querySelector('#contratacion h2').textContent = translations[lang]['hiring_title'];
         
         const hiringSteps = document.querySelector('#contratacion .hiring-steps');
@@ -203,13 +212,13 @@ document.addEventListener('DOMContentLoaded', function() {
             ${translations[lang]['pricing_items'].map(item => `<p>${item}</p>`).join('')}
         `;
 
-        // 6. Actualizar sección Contacto
+        // 7. Actualizar sección Contacto
         document.querySelector('#contacto h2').textContent = translations[lang]['contact_title'];
 
-        // 7. Actualizar footer
+        // 8. Actualizar footer
         document.querySelector('.footer p').textContent = translations[lang]['footer_text'];
 
-        // 8. Guardar preferencia
+        // 9. Guardar preferencia
         localStorage.setItem('preferredLanguage', lang);
     }
 
