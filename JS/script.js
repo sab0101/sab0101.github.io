@@ -303,14 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', animateOnScroll);
         
         // Configurar galería modal
-        const modal = document.createElement('div');
-        modal.className = 'modal';
-        modal.innerHTML = `
-            <span class="close-modal">&times;</span>
-            <img class="modal-content" src="" alt="">
-            <div class="caption"></div>
-        `;
-        document.body.appendChild(modal);
+        const modal = document.querySelector('.modal');
         
         document.querySelectorAll('.gallery-item img').forEach(img => {
             img.addEventListener('click', () => {
@@ -320,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        modal.querySelector('.close-modal').addEventListener('click', () => {
+        document.querySelector('.close-modal').addEventListener('click', () => {
             modal.style.display = 'none';
         });
         
