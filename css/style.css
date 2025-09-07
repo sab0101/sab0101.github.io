@@ -93,6 +93,48 @@ h2::after {
     height: 12px;
 }
 
+/* Estilos para el LinkedIn flotante */
+.floating-linkedin {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-linkedin a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.floating-linkedin a:hover {
+    background-color: #0077B5; /* Color oficial de LinkedIn */
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* Hero section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), #2c5282);
@@ -412,21 +454,6 @@ h2::after {
     text-align: center;
 }
 
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: var(--white);
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--secondary-color);
-}
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -523,5 +550,16 @@ h2::after {
     .lang-btn {
         padding: 3px 8px;
         font-size: 0.7rem;
+    }
+    
+    .floating-linkedin {
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .floating-linkedin a {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
     }
 }

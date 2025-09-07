@@ -267,18 +267,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector(`.lang-btn[data-lang="${savedLang}"]`).classList.add('active');
         applyTranslation(savedLang);
         
-        // Configurar scroll suave
+        // Configurar scroll suave (excluyendo el LinkedIn flotante)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+            // Excluir el enlace de LinkedIn flotante para evitar conflicto
+            if (!anchor.closest('.floating-linkedin')) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
         });
         
         // Configurar animaciones al hacer scroll
