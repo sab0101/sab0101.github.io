@@ -328,11 +328,105 @@ document.addEventListener('DOMContentLoaded', function() {
                 applyTranslation(lang);
                 
                 // Track event
-                gtag('event', 'language_change', {
-                    'event_category': 'Language',
-                    'event_label': lang.toUpperCase()
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'language_change', {
+                        'event_category': 'Language',
+                        'event_label': lang.toUpperCase()
+                    });
+                }
             });
+        });
+    }
+
+    // ==================== VERIFICACIÓN DE GOOGLE ANALYTICS ====================
+    function verifyGoogleAnalytics() {
+        if (typeof gtag === 'undefined') {
+            console.error('Google Analytics gtag is not defined');
+            return false;
+        }
+        
+        // Verificar que GA esté cargado correctamente
+        if (typeof window.dataLayer === 'undefined') {
+            console.error('Google Analytics dataLayer is not defined');
+            return false;
+        }
+        
+        console.log('Google Analytics is properly loaded');
+        return true;
+    }
+
+    // ==================== TRACKING DE LINKEDIN MEJORADO ====================
+    function setupLinkedInTracking() {
+        const linkedinLink = document.getElementById('linkedin-track');
+        
+        if (linkedinLink) {
+            linkedinLink.addEventListener('click', function(e) {
+                console.log('LinkedIn click detected - starting tracking process');
+                
+                // Prevenir navegación inmediata para dar tiempo al tracking
+                e.preventDefault();
+                
+                const linkedinUrl = this.href;
+                
+                // Verificar si Google Analytics está disponible
+                if (typeof gtag !== 'undefined') {
+                    console.log('Sending event to Google Analytics...');
+                    
+                    // Enviar evento a Google Analytics con callback
+                    gtag('event', 'click', {
+                        'event_category': 'Social',
+                        'event_label': 'LinkedIn Icon Click',
+                        'event_callback': function() {
+                            console.log('LinkedIn click tracked successfully - navigating to LinkedIn');
+                            // Redirigir después de que GA reciba el evento
+                            window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
+                        },
+                        'transport_type': 'beacon' // Usar beacon para mejor confiabilidad
+                    });
+                    
+                    console.log('Event sent to Google Analytics');
+                    
+                    // Fallback: redirigir después de 500ms si el callback falla
+                    setTimeout(function() {
+                        console.log('Fallback navigation to LinkedIn');
+                        window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
+                    }, 500);
+                    
+                } else {
+                    console.warn('Google Analytics not available - direct navigation');
+                    // Si GA no está disponible, navegar directamente
+                    window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
+                }
+            });
+            
+            console.log('LinkedIn tracking setup completed');
+        } else {
+            console.error('LinkedIn link element not found');
+        }
+    }
+
+    // ==================== TRACKING MEJORADO PARA TODOS LOS ENLACES EXTERNOS ====================
+    function setupExternalLinkTracking() {
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            if (!link.href.includes(window.location.hostname)) {
+                link.addEventListener('click', function(e) {
+                    const url = this.href;
+                    const isLinkedIn = url.includes('linkedin.com');
+                    
+                    if (isLinkedIn && this.id !== 'linkedin-track') {
+                        // Solo trackear si no es el enlace flotante que ya tiene su propio tracking
+                        return;
+                    }
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'Outbound',
+                            'event_label': url,
+                            'transport_type': 'beacon'
+                        });
+                    }
+                });
+            }
         });
     }
 
@@ -445,10 +539,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 modal.querySelector('.caption').textContent = img.alt;
                 
                 // Track event
-                gtag('event', 'gallery_open', {
-                    'event_category': 'Gallery',
-                    'event_label': img.alt
-                });
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'gallery_open', {
+                        'event_category': 'Gallery',
+                        'event_label': img.alt
+                    });
+                }
             });
         });
         
@@ -512,38 +608,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ==================== DEBUG PARA MONITOREAR EVENTOS ====================
+    function monitorGtagEvents() {
+        if (typeof gtag === 'undefined') return;
+        
+        const originalGtag = window.gtag;
+        window.gtag = function() {
+            console.log('GTag Event Called:', arguments);
+            return originalGtag.apply(this, arguments);
+        };
+    }
+
     // ==================== INICIALIZACIÓN ====================
     function init() {
-        // Configurar el selector de idioma
+        console.log('Initializing website...');
+        
+        // Verificar Google Analytics primero
+        if (!verifyGoogleAnalytics()) {
+            console.warn('Google Analytics not loaded properly - some tracking may not work');
+        }
+        
+        // Opcional: Activar debug de eventos (quitar el comentario para activar)
+        // monitorGtagEvents();
+        
+        // Configuraciones existentes...
         setupLanguageButtons();
         
-        // Cargar idioma preferido o usar español por defecto
         const savedLang = localStorage.getItem('preferredLanguage') || 'es';
         document.querySelector(`.lang-btn[data-lang="${savedLang}"]`).classList.add('active');
         applyTranslation(savedLang);
         
-        // Configurar menú móvil
         setupMobileMenu();
-        
-        // Configurar scroll suave y navegación
         setupSmoothScroll();
-        
-        // Configurar animaciones
         setupAnimations();
-        
-        // Configurar galería modal
         setupGalleryModal();
-        
-        // Configurar observador de intersección
         setupIntersectionObserver();
-        
-        // Configurar fallbacks de imágenes
         setupImageFallbacks();
-        
-        // Configurar optimizaciones de rendimiento
         setupPerformanceOptimizations();
         
-        // Configurar indicador de scroll del hero
+        // NUEVO: Configurar tracking de LinkedIn (IMPORTANTE)
+        setupLinkedInTracking();
+        
+        // Configurar tracking para otros enlaces externos
+        setupExternalLinkTracking();
+        
+        // Configurar scroll del hero
         const scrollIndicator = document.querySelector('.hero-scroll-indicator');
         if (scrollIndicator) {
             scrollIndicator.addEventListener('click', () => {
@@ -557,11 +666,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
-        // Ajustar layout inicial
         setTimeout(adjustLayoutAfterTranslation, 500);
-        
-        // Ajustar layout en redimensionamiento
         window.addEventListener('resize', adjustLayoutAfterTranslation);
+        
+        console.log('Website initialization completed');
+        console.log('LinkedIn tracking is active');
     }
 
     // Iniciar la aplicación
