@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoría SAB - Especialista en Recursos Humanos</title>
-    <meta name="description" content="Transformamos tu gestión de talento con soluciones innovadoras y personalizadas">
+    <meta name="description" content="Transformo tu gestión de talento con soluciones innovadoras y personalizadas">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,17 +25,7 @@
     </script>
 </head>
 <body>
-    <!-- Selector de idioma -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="es">
-            <span class="flag-icon flag-icon-es"></span> ESP
-        </button>
-        <button class="lang-btn" data-lang="en">
-            <span class="flag-icon flag-icon-gb"></span> ENG
-        </button>
-    </div>
-
-    <!-- LinkedIn flotante - MODIFICADO -->
+    <!-- LinkedIn flotante -->
     <div class="floating-linkedin">
         <a href="https://www.linkedin.com/in/sasha-arbal/" 
            id="linkedin-track"
@@ -67,6 +57,29 @@
         </div>
     </nav>
 
+    <!-- Selector de idioma - ICONO DESPLEGABLE -->
+    <div class="language-dropdown">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+            <i class="fas fa-globe"></i>
+            <span class="lang-current" id="currentLangLabel">ESP</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="lang-menu" id="langMenu">
+            <button class="lang-option active" data-lang="es">
+                <span class="flag-icon flag-icon-es"></span> Español
+            </button>
+            <button class="lang-option" data-lang="en">
+                <span class="flag-icon flag-icon-gb"></span> English
+            </button>
+            <button class="lang-option" data-lang="it">
+                <span class="flag-icon flag-icon-it"></span> Italiano
+            </button>
+            <button class="lang-option" data-lang="hr">
+                <span class="flag-icon flag-icon-hr"></span> Hrvatski
+            </button>
+        </div>
+    </div>
+
     <header class="hero">
         <div class="container">
             <div class="hero-content">
@@ -74,7 +87,7 @@
                 <p class="subtitle" data-translate="hero_subtitle">Transformando Recursos Humanos</p>
                 <p class="hero-description" data-translate="hero_description">Soluciones innovadoras en Recursos Humanos para potenciar tu organización</p>
                 <div class="hero-buttons">
-                    <a href="#servicios" class="btn btn-primary" data-translate="nav_services">Nuestros Servicios</a>
+                    <a href="#servicios" class="btn btn-primary" data-translate="nav_services">Mis Servicios</a>
                     <a href="#contacto" class="btn btn-secondary" data-translate="nav_contact">Contactar</a>
                 </div>
             </div>
@@ -92,13 +105,13 @@
             </div>
             <div class="profile-content">
                 <div class="profile-text">
-                    <h3 data-translate="profile_name">Sasha Arbe Balarezo</h3>
+                    <h3 data-translate="profile_name">Sasha Arbe</h3>
                     <p class="intro" data-translate="profile_intro">Esto es lo que tienes que saber de mí:</p>
                     <ul class="profile-list">
                         <li data-translate="profile_item_1">Psicóloga profesional con más de 9 años en RR.HH.</li>
-                        <li data-translate="profile_item_2">Especializada en Desarrollo, Personas y Operaciones.</li>
-                        <li data-translate="profile_item_3">Sectores de experiencia: farma, ONG, retail, consumo masivo, financiero, comercial, infraestructura y consultoría.</li>
-                        <li data-translate="profile_item_4">Skills: Resolución de problemas, Rápida Adaptabilidad, Pensamiento crítico, Comunicación, Toma de decisiones, Planificación y Gestión.</li>
+                        <li data-translate="profile_item_2">Especializada en Desarrollo Organizacional, Personas y Operaciones.</li>
+                        <li data-translate="profile_item_3">He trabajado en sectores: farma, ONG, retail, consumo masivo, financiero, comercial, infraestructura y consultoría.</li>
+                        <li data-translate="profile_item_4">Mis skills: Resolución de problemas, Rápida Adaptabilidad, Pensamiento crítico, Comunicación, Toma de decisiones, Planificación y Gestión del Cambio.</li>
                     </ul>
                     <div class="profile-stats">
                         <div class="stat-item">
@@ -116,7 +129,7 @@
                     </div>
                 </div>
                 <div class="profile-image">
-                    <img src="ASSETS/sasha-profile.jpg" alt="Sasha Arbe Balarezo - Especialista en Recursos Humanos" class="profile-photo">
+                    <img src="ASSETS/sasha-profile.jpg" alt="Sasha Arbe - Especialista en Recursos Humanos" class="profile-photo">
                     <div class="profile-badge">
                         <i class="fas fa-award"></i>
                         <span data-translate="profile_badge">Especialista en RH</span>
@@ -129,51 +142,51 @@
     <section id="servicios" class="section services-section">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="services_title">Servicios Especializados</h2>
+                <h2 data-translate="services_title">Mis Servicios Especializados</h2>
                 <p class="section-subtitle" data-translate="services_subtitle">Seré tu mano derecha en el área</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-user-tie"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <h3 data-translate="service_1_title">Reclutamiento y Selección</h3>
-                    <p data-translate="service_1_desc">Encuentra al talento ideal para tu organización con nuestro proceso de selección especializado.</p>
+                    <h3 data-translate="service_1_title">Desarrollo Organizacional</h3>
+                    <p data-translate="service_1_desc">Diagnostico, diseño y rediseño de estructuras, procesos y roles para alinear tu organización con su estrategia y maximizar el rendimiento.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 data-translate="service_2_title">Clima y Cultura Organizacional</h3>
+                    <p data-translate="service_2_desc">Diagnostico el clima laboral y fortalezco la cultura empresarial para construir entornos de trabajo inclusivos, comprometidos y de alto rendimiento.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3 data-translate="service_2_title">Capacitación y Aprendizaje</h3>
-                    <p data-translate="service_2_desc">Programas de desarrollo continuo para potenciar las habilidades de tu equipo.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 data-translate="service_3_title">Desarrollo Organizacional</h3>
-                    <p data-translate="service_3_desc">Transformamos la estructura de tu organización para maximizar su potencial.</p>
+                    <h3 data-translate="service_3_title">Capacitación y Aprendizaje</h3>
+                    <p data-translate="service_3_desc">Diseño e implemento soluciones integrales de aprendizaje: diagnóstico de necesidades, plan anual de capacitación, programas de habilidades blandas y técnicas, y campus virtuales personalizados para desarrollar el potencial de tu equipo.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-comments"></i>
                     </div>
                     <h3 data-translate="service_4_title">Comunicación Interna</h3>
-                    <p data-translate="service_4_desc">Estrategias efectivas para mejorar la comunicación dentro de tu empresa.</p>
+                    <p data-translate="service_4_desc">Diseño e implemento estrategias de comunicación interna para alinear equipos, fortalecer el compromiso y garantizar que el mensaje llegue de forma clara y efectiva a todos los colaboradores.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
+                        <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3 data-translate="service_5_title">Evaluación de Desempeño</h3>
-                    <p data-translate="service_5_desc">Sistemas modernos de evaluación para medir y mejorar el rendimiento.</p>
+                    <h3 data-translate="service_5_title">Gestión del Cambio</h3>
+                    <p data-translate="service_5_desc">Diseño e implemento la estrategia de gestión del cambio para tus proyectos de transformación, aplicando la metodología ADKAR® de Prosci, para garantizar que tus equipos adopten los cambios de manera efectiva y los resultados se sostengan en el tiempo.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-sitemap"></i>
+                        <i class="fas fa-user-tie"></i>
                     </div>
-                    <h3 data-translate="service_6_title">Cultura Organizacional</h3>
-                    <p data-translate="service_6_desc">Desarrollamos y fortalecemos la cultura de tu empresa.</p>
+                    <h3 data-translate="service_6_title">Reclutamiento y Selección</h3>
+                    <p data-translate="service_6_desc">Diseño y gestiono procesos de atracción y selección de talento que garantizan el mejor fit cultural y profesional, reduciendo la rotación y acelerando la integración.</p>
                 </div>
             </div>
             <div class="services-cta">
@@ -187,7 +200,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="achievements_title">Logros Destacados</h2>
-                <p class="section-subtitle" data-translate="achievements_subtitle">Resultados tangibles que demuestran nuestro expertise</p>
+                <p class="section-subtitle" data-translate="achievements_subtitle">Resultados tangibles que demuestran mi expertise</p>
             </div>
             <div class="achievements-grid">
                 <div class="achievement-card">
@@ -243,14 +256,14 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="hiring_title">Proceso de Contratación</h2>
-                <p class="section-subtitle" data-translate="hiring_subtitle">Cómo trabajamos para garantizar tu éxito</p>
+                <p class="section-subtitle" data-translate="hiring_subtitle">Cómo trabajo para garantizar tu éxito</p>
             </div>
             <div class="process-timeline">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3 data-translate="process_step_1_title">Solicitud del Cliente</h3>
-                        <p data-translate="process_step_1_desc">Nos cuentas tus necesidades y objetivos específicos</p>
+                        <p data-translate="process_step_1_desc">Me cuentas tus necesidades y objetivos específicos</p>
                     </div>
                 </div>
                 <div class="process-step">
@@ -264,7 +277,7 @@
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3 data-translate="process_step_3_title">Presentación de Propuesta</h3>
-                        <p data-translate="process_step_3_desc">Elaboramos una solución personalizada con alcance y costos</p>
+                        <p data-translate="process_step_3_desc">Elaboro una solución personalizada con alcance y costos</p>
                     </div>
                 </div>
                 <div class="process-step">
@@ -278,7 +291,7 @@
                     <div class="step-number">5</div>
                     <div class="step-content">
                         <h3 data-translate="process_step_5_title">Implementación</h3>
-                        <p data-translate="process_step_5_desc">Ejecutamos el proyecto con seguimiento continuo</p>
+                        <p data-translate="process_step_5_desc">Ejecuto el proyecto con seguimiento continuo</p>
                     </div>
                 </div>
             </div>
@@ -312,7 +325,7 @@
     <section id="galeria" class="section gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2 data-translate="gallery_title">Nuestros Proyectos</h2>
+                <h2 data-translate="gallery_title">Mis Proyectos</h2>
                 <p class="section-subtitle" data-translate="gallery_subtitle">Experiencia tangible en acción</p>
             </div>
             <div class="gallery-grid">
@@ -366,13 +379,13 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="contact_title">Contacto Directo</h2>
-                <p class="section-subtitle" data-translate="contact_subtitle">Estamos listos para transformar tu gestión de talento</p>
+                <p class="section-subtitle" data-translate="contact_subtitle">Estoy lista para transformar tu gestión de talento</p>
             </div>
             
             <div class="contact-content-simple">
                 <div class="contact-info">
                     <h3 data-translate="contact_heading">Hablemos de tu proyecto</h3>
-                    <p data-translate="contact_description">Contáctanos para conocer cómo podemos ayudarte a alcanzar tus objetivos en Recursos Humanos.</p>
+                    <p data-translate="contact_description">Contáctame para conocer cómo puedo ayudarte a alcanzar tus objetivos en Recursos Humanos.</p>
                     
                     <div class="contact-methods-simple">
                         <div class="contact-card-simple">
@@ -424,7 +437,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h3>Consultoría SAB</h3>
-                    <p data-translate="footer_tagline">Especialistas en Transformación de Recursos Humanos</p>
+                    <p data-translate="footer_tagline">Especialista en Transformación de Recursos Humanos</p>
                 </div>
                 <div class="footer-links">
                     <h4 data-translate="footer_links_title">Enlaces Rápidos</h4>

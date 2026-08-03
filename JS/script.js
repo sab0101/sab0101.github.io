@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         'es': {
             // Títulos y textos generales
-            'title': 'Consultoría SAB - Especialistas en Recursos Humanos',
+            'title': 'Consultoría SAB - Especialista en Recursos Humanos',
             'hero_title': 'Consultoría SAB',
             'hero_subtitle': 'Transformando la Gestión de Talento',
             'hero_description': 'Soluciones innovadoras en Recursos Humanos para potenciar tu organización',
             'footer_text': '© 2023 Consultoría SAB. Todos los derechos reservados.',
-            'footer_tagline': 'Especialistas en Transformación de Recursos Humanos',
+            'footer_tagline': 'Especialista en Transformación de Recursos Humanos',
             'footer_links_title': 'Enlaces Rápidos',
             'footer_legal_title': 'Legal',
             'footer_rights': 'Todos los derechos reservados.',
@@ -25,38 +25,38 @@ document.addEventListener('DOMContentLoaded', function() {
             // Sección Perfil
             'profile_title': 'Perfil Profesional',
             'profile_subtitle': 'Conóceme',
-            'profile_name': 'Sasha Arbe Balarezo',
+            'profile_name': 'Sasha Arbe',
             'profile_intro': 'Esto es lo que tienes que saber de mí:',
             'profile_item_1': 'Psicóloga profesional con más de 9 años en RR.HH.',
-            'profile_item_2': 'Especializada en Desarrollo, Personas y Operaciones.',
-            'profile_item_3': 'Sectores de experiencia: farma, ONG, retail, consumo masivo, financiero, comercial, infraestructura y consultoría.',
-            'profile_item_4': 'Skills: Resolución de problemas, Rápida Adaptabilidad, Pensamiento crítico, Comunicación, Toma de decisiones, Planificación y Gestión.',
+            'profile_item_2': 'Especializada en Desarrollo Organizacional, Personas y Operaciones.',
+            'profile_item_3': 'He trabajado en sectores: farma, ONG, retail, consumo masivo, financiero, comercial, infraestructura y consultoría.',
+            'profile_item_4': 'Mis skills: Resolución de problemas, Rápida Adaptabilidad, Pensamiento crítico, Comunicación, Toma de decisiones, Planificación y Gestión del Cambio.',
             'profile_badge': 'Especialista en RH',
             'stat_experience': 'Años de Experiencia',
             'stat_projects': 'Proyectos Completados',
             'stat_sectors': 'Sectores Atendidos',
 
             // Sección Servicios
-            'services_title': 'Servicios Especializados',
+            'services_title': 'Mis Servicios Especializados',
             'services_subtitle': 'Seré tu mano derecha en el área',
-            'service_1_title': 'Reclutamiento y Selección',
-            'service_1_desc': 'Encuentra al talento ideal para tu organización con nuestro proceso de selección especializado.',
-            'service_2_title': 'Capacitación y Aprendizaje',
-            'service_2_desc': 'Programas de desarrollo continuo para potenciar las habilidades de tu equipo.',
-            'service_3_title': 'Desarrollo Organizacional',
-            'service_3_desc': 'Transformamos la estructura de tu organización para maximizar su potencial.',
+            'service_1_title': 'Desarrollo Organizacional',
+            'service_1_desc': 'Diagnostico, diseño y rediseño de estructuras, procesos y roles para alinear tu organización con su estrategia y maximizar el rendimiento.',
+            'service_2_title': 'Clima y Cultura Organizacional',
+            'service_2_desc': 'Diagnostico el clima laboral y fortalezco la cultura empresarial para construir entornos de trabajo inclusivos, comprometidos y de alto rendimiento.',
+            'service_3_title': 'Capacitación y Aprendizaje',
+            'service_3_desc': 'Diseño e implemento soluciones integrales de aprendizaje: diagnóstico de necesidades, plan anual de capacitación, programas de habilidades blandas y técnicas, y campus virtuales personalizados para desarrollar el potencial de tu equipo.',
             'service_4_title': 'Comunicación Interna',
-            'service_4_desc': 'Estrategias efectivas para mejorar la comunicación dentro de tu empresa.',
-            'service_5_title': 'Evaluación de Desempeño',
-            'service_5_desc': 'Sistemas modernos de evaluación para medir y mejorar el rendimiento.',
-            'service_6_title': 'Cultura Organizacional',
-            'service_6_desc': 'Desarrollamos y fortalecemos la cultura de tu empresa.',
+            'service_4_desc': 'Diseño e implemento estrategias de comunicación interna para alinear equipos, fortalecer el compromiso y garantizar que el mensaje llegue de forma clara y efectiva a todos los colaboradores.',
+            'service_5_title': 'Gestión del Cambio',
+            'service_5_desc': 'Diseño e implemento la estrategia de gestión del cambio para tus proyectos de transformación, aplicando la metodología ADKAR® de Prosci, para garantizar que tus equipos adopten los cambios de manera efectiva y los resultados se sostengan en el tiempo.',
+            'service_6_title': 'Reclutamiento y Selección',
+            'service_6_desc': 'Diseño y gestiono procesos de atracción y selección de talento que garantizan el mejor fit cultural y profesional, reduciendo la rotación y acelerando la integración.',
             'services_cta': '¿Necesitas un servicio personalizado?',
             'services_button': 'Contactar Ahora',
 
             // Sección Logros
             'achievements_title': 'Logros Destacados',
-            'achievements_subtitle': 'Resultados tangibles que demuestran nuestro expertise',
+            'achievements_subtitle': 'Resultados tangibles que demuestran mi expertise',
             'achievement_1_title': 'Satisfacción de Clima',
             'achievement_1_desc': 'Pasó de 30% al 98% en menos de 1 año',
             'achievement_2_title': 'Reconocimiento GPTW',
@@ -70,17 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Sección Contratación
             'hiring_title': 'Proceso de Contratación',
-            'hiring_subtitle': 'Cómo trabajamos para garantizar tu éxito',
+            'hiring_subtitle': 'Cómo trabajo para garantizar tu éxito',
             'process_step_1_title': 'Solicitud del Cliente',
-            'process_step_1_desc': 'Nos cuentas tus necesidades y objetivos específicos',
+            'process_step_1_desc': 'Me cuentas tus necesidades y objetivos específicos',
             'process_step_2_title': 'Reunión de Especificación',
             'process_step_2_desc': 'Analizamos detalladamente los requerimientos del proyecto',
             'process_step_3_title': 'Presentación de Propuesta',
-            'process_step_3_desc': 'Elaboramos una solución personalizada con alcance y costos',
+            'process_step_3_desc': 'Elaboro una solución personalizada con alcance y costos',
             'process_step_4_title': 'Confirmación del Servicio',
             'process_step_4_desc': 'Firmamos el acuerdo y comenzamos la planificación',
             'process_step_5_title': 'Implementación',
-            'process_step_5_desc': 'Ejecutamos el proyecto con seguimiento continuo',
+            'process_step_5_desc': 'Ejecuto el proyecto con seguimiento continuo',
             'pricing_title': 'Información de Costos',
             'pricing_recruitment': 'Reclutamiento & Selección',
             'pricing_consulting': 'Consultoría Especializada',
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'pricing_item_6': 'Seguimiento post-implementación',
 
             // Sección Galería
-            'gallery_title': 'Nuestros Proyectos',
+            'gallery_title': 'Mis Proyectos',
             'gallery_subtitle': 'Experiencia tangible en acción',
             'gallery_item_1_title': 'Kit cumpleañero',
             'gallery_item_1_category': 'Cultura',
@@ -110,9 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Sección Contacto
             'contact_title': 'Contacto Directo',
-            'contact_subtitle': 'Estamos listos para transformar tu gestión de talento',
+            'contact_subtitle': 'Estoy lista para transformar tu gestión de talento',
             'contact_heading': 'Hablemos de tu proyecto',
-            'contact_description': 'Contáctanos para conocer cómo podemos ayudarte a alcanzar tus objetivos en Recursos Humanos.',
+            'contact_description': 'Contáctame para conocer cómo puedo ayudarte a alcanzar tus objetivos en Recursos Humanos.',
             'contact_whatsapp_latam': 'WhatsApp LATAM',
             'contact_whatsapp_eu': 'WhatsApp Europa',
             'contact_whatsapp_action': 'Escribir por WhatsApp',
@@ -121,12 +121,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'en': {
             // General titles and texts
-            'title': 'SAB Consulting - Human Resources Specialists',
+            'title': 'SAB Consulting - Human Resources Specialist',
             'hero_title': 'SAB Consulting',
             'hero_subtitle': 'Transforming Talent Management',
             'hero_description': 'Innovative Human Resources solutions to empower your organization',
             'footer_text': '© 2023 SAB Consulting. All rights reserved.',
-            'footer_tagline': 'Specialists in Human Resources Transformation',
+            'footer_tagline': 'Specialist in Human Resources Transformation',
             'footer_links_title': 'Quick Links',
             'footer_legal_title': 'Legal',
             'footer_rights': 'All rights reserved.',
@@ -143,38 +143,38 @@ document.addEventListener('DOMContentLoaded', function() {
             // Profile section
             'profile_title': 'Professional Profile',
             'profile_subtitle': 'Get to know me',
-            'profile_name': 'Sasha Arbe Balarezo',
+            'profile_name': 'Sasha Arbe',
             'profile_intro': 'This is what you need to know about me:',
             'profile_item_1': 'Professional psychologist with more than 9 years in HR',
-            'profile_item_2': 'Specialized in Development, People and Operations',
-            'profile_item_3': 'Experience sectors: pharma, NGO, retail, mass consumption, financial, commercial, infrastructure and consulting',
-            'profile_item_4': 'Skills: Problem solving, Quick Adaptability, Critical thinking, Communication, Decision making, Planning and Management',
+            'profile_item_2': 'Specialized in Organizational Development, People and Operations',
+            'profile_item_3': 'I have worked in sectors: pharma, NGO, retail, mass consumption, financial, commercial, infrastructure and consulting',
+            'profile_item_4': 'My skills: Problem solving, Quick Adaptability, Critical thinking, Communication, Decision making, Planning and Change Management',
             'profile_badge': 'HR Specialist',
             'stat_experience': 'Years of Experience',
             'stat_projects': 'Completed Projects',
             'stat_sectors': 'Sectors Served',
 
             // Services section
-            'services_title': 'Specialized Services',
+            'services_title': 'My Specialized Services',
             'services_subtitle': "I'll be your right hand in the HR area",
-            'service_1_title': 'Recruitment and Selection',
-            'service_1_desc': 'Find the ideal talent for your organization with our specialized selection process.',
-            'service_2_title': 'Training and Learning',
-            'service_2_desc': 'Continuous development programs to enhance your team\'s skills.',
-            'service_3_title': 'Organizational Development',
-            'service_3_desc': 'We transform your organization\'s structure to maximize its potential.',
+            'service_1_title': 'Organizational Development',
+            'service_1_desc': 'I diagnose, design and redesign structures, processes and roles to align your organization with its strategy and maximize performance.',
+            'service_2_title': 'Organizational Climate and Culture',
+            'service_2_desc': 'I diagnose the work climate and strengthen corporate culture to build inclusive, committed, and high-performance work environments.',
+            'service_3_title': 'Training and Learning',
+            'service_3_desc': 'I design and implement comprehensive learning solutions: needs diagnosis, annual training plan, soft and technical skills programs, and customized virtual campuses to develop your team\'s potential.',
             'service_4_title': 'Internal Communication',
-            'service_4_desc': 'Effective strategies to improve communication within your company.',
-            'service_5_title': 'Performance Evaluation',
-            'service_5_desc': 'Modern evaluation systems to measure and improve performance.',
-            'service_6_title': 'Organizational Culture',
-            'service_6_desc': 'We develop and strengthen your company\'s culture.',
+            'service_4_desc': 'I design and implement internal communication strategies to align teams, strengthen commitment, and ensure that the message reaches all collaborators clearly and effectively.',
+            'service_5_title': 'Change Management',
+            'service_5_desc': 'I design and implement the change management strategy for your transformation projects, applying the ADKAR® methodology by Prosci, to ensure that your teams adopt changes effectively and results are sustained over time.',
+            'service_6_title': 'Recruitment and Selection',
+            'service_6_desc': 'I design and manage talent attraction and selection processes that guarantee the best cultural and professional fit, reducing turnover and accelerating integration.',
             'services_cta': 'Need a personalized service?',
             'services_button': 'Contact Now',
 
             // Achievements section
             'achievements_title': 'Featured Achievements',
-            'achievements_subtitle': 'Tangible results that demonstrate our expertise',
+            'achievements_subtitle': 'Tangible results that demonstrate my expertise',
             'achievement_1_title': 'Climate Satisfaction',
             'achievement_1_desc': 'Increased from 30% to 98% in less than 1 year',
             'achievement_2_title': 'GPTW Recognition',
@@ -188,17 +188,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Hiring section
             'hiring_title': 'Hiring Process',
-            'hiring_subtitle': 'How we work to ensure your success',
+            'hiring_subtitle': 'How I work to ensure your success',
             'process_step_1_title': 'Client Request',
-            'process_step_1_desc': 'You tell us your specific needs and objectives',
+            'process_step_1_desc': 'You tell me your specific needs and objectives',
             'process_step_2_title': 'Specification Meeting',
             'process_step_2_desc': 'We analyze the project requirements in detail',
             'process_step_3_title': 'Proposal Presentation',
-            'process_step_3_desc': 'We develop a personalized solution with scope and costs',
+            'process_step_3_desc': 'I develop a personalized solution with scope and costs',
             'process_step_4_title': 'Service Confirmation',
             'process_step_4_desc': 'We sign the agreement and begin planning',
             'process_step_5_title': 'Implementation',
-            'process_step_5_desc': 'We execute the project with continuous follow-up',
+            'process_step_5_desc': 'I execute the project with continuous follow-up',
             'pricing_title': 'Pricing Information',
             'pricing_recruitment': 'Recruitment & Selection',
             'pricing_consulting': 'Specialized Consulting',
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'pricing_item_6': 'Post-implementation follow-up',
 
             // Gallery section
-            'gallery_title': 'Our Projects',
+            'gallery_title': 'My Projects',
             'gallery_subtitle': 'Tangible experience in action',
             'gallery_item_1_title': 'Birthday Kit',
             'gallery_item_1_category': 'Culture',
@@ -228,14 +228,250 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Contact section
             'contact_title': 'Direct Contact',
-            'contact_subtitle': 'We are ready to transform your talent management',
+            'contact_subtitle': 'I am ready to transform your talent management',
             'contact_heading': 'Let\'s talk about your project',
-            'contact_description': 'Contact us to learn how we can help you achieve your HR objectives.',
+            'contact_description': 'Contact me to learn how I can help you achieve your HR objectives.',
             'contact_whatsapp_latam': 'WhatsApp LATAM',
             'contact_whatsapp_eu': 'WhatsApp Europe',
             'contact_whatsapp_action': 'Write via WhatsApp',
             'contact_email': 'Direct Email',
             'contact_email_action': 'Send Email'
+        },
+        'it': {
+            // General titles and texts
+            'title': 'SAB Consulting - Specialista in Risorse Umane',
+            'hero_title': 'SAB Consulting',
+            'hero_subtitle': 'Trasformare la Gestione del Talento',
+            'hero_description': 'Soluzioni innovative per le Risorse Umane per potenziare la tua organizzazione',
+            'footer_text': '© 2023 SAB Consulting. Tutti i diritti riservati.',
+            'footer_tagline': 'Specialista nella Trasformazione delle Risorse Umane',
+            'footer_links_title': 'Link Rapidi',
+            'footer_legal_title': 'Legale',
+            'footer_rights': 'Tutti i diritti riservati.',
+            'footer_specialization': 'Consulenza specializzata in Risorse Umane',
+
+            // Navigation
+            'nav_profile': 'Profilo',
+            'nav_services': 'Servizi',
+            'nav_achievements': 'Risultati',
+            'nav_process': 'Processo',
+            'nav_gallery': 'Galleria',
+            'nav_contact': 'Contatto',
+
+            // Profile section
+            'profile_title': 'Profilo Professionale',
+            'profile_subtitle': 'Conoscimi',
+            'profile_name': 'Sasha Arbe',
+            'profile_intro': 'Questo è ciò che devi sapere di me:',
+            'profile_item_1': 'Psicologa professionista con più di 9 anni in HR',
+            'profile_item_2': 'Specializzata in Sviluppo Organizzativo, Persone e Operazioni',
+            'profile_item_3': 'Ho lavorato in settori: farmaceutico, ONG, retail, consumo di massa, finanziario, commerciale, infrastrutture e consulenza',
+            'profile_item_4': 'Le mie competenze: Risoluzione dei problemi, Adattabilità rapida, Pensiero critico, Comunicazione, Processo decisionale, Pianificazione e Gestione del Cambiamento',
+            'profile_badge': 'Specialista in HR',
+            'stat_experience': 'Anni di Esperienza',
+            'stat_projects': 'Progetti Completati',
+            'stat_sectors': 'Settori Serviti',
+
+            // Services section
+            'services_title': 'I Miei Servizi Specializzati',
+            'services_subtitle': 'Sarò la tua mano destra nell\'area HR',
+            'service_1_title': 'Sviluppo Organizzativo',
+            'service_1_desc': 'Diagnostico, progetto e riprogetto strutture, processi e ruoli per allineare la tua organizzazione alla strategia e massimizzare le prestazioni.',
+            'service_2_title': 'Clima e Cultura Organizzativa',
+            'service_2_desc': 'Diagnostico il clima lavorativo e rafforzo la cultura aziendale per costruire ambienti di lavoro inclusivi, coinvolgenti e ad alte prestazioni.',
+            'service_3_title': 'Formazione e Apprendimento',
+            'service_3_desc': 'Progetto e implemento soluzioni formative complete: diagnosi dei bisogni, piano annuale di formazione, programmi di competenze trasversali e tecniche, e campus virtuali personalizzati per sviluppare il potenziale del tuo team.',
+            'service_4_title': 'Comunicazione Interna',
+            'service_4_desc': 'Progetto e implemento strategie di comunicazione interna per allineare i team, rafforzare l\'impegno e garantire che il messaggio arrivi in modo chiaro ed efficace a tutti i collaboratori.',
+            'service_5_title': 'Gestione del Cambiamento',
+            'service_5_desc': 'Progetto e implemento la strategia di gestione del cambiamento per i tuoi progetti di trasformazione, applicando la metodologia ADKAR® di Prosci, per garantire che i tuoi team adottino i cambiamenti in modo efficace e i risultati siano sostenuti nel tempo.',
+            'service_6_title': 'Reclutamento e Selezione',
+            'service_6_desc': 'Progetto e gestisco processi di attrazione e selezione del talento che garantiscono il miglior fit culturale e professionale, riducendo il turnover e accelerando l\'integrazione.',
+            'services_cta': 'Hai bisogno di un servizio personalizzato?',
+            'services_button': 'Contatta Ora',
+
+            // Achievements section
+            'achievements_title': 'Risultati Rilevanti',
+            'achievements_subtitle': 'Risultati tangibili che dimostrano la mia esperienza',
+            'achievement_1_title': 'Soddisfazione del Clima',
+            'achievement_1_desc': 'Passata dal 30% al 98% in meno di 1 anno',
+            'achievement_2_title': 'Riconoscimento GPTW',
+            'achievement_2_desc': '5 anni consecutivi come Great Place to Work',
+            'achievement_2_badge': 'Riconoscimento Internazionale',
+            'achievement_3_title': 'Fidelizzazione del Talento',
+            'achievement_3_desc': 'Dal 23% al 99% dei dipendenti decideva di rimanere in azienda',
+            'achievement_4_title': 'Ottimizzazione dei Costi',
+            'achievement_4_desc': 'Risparmio medio del 35% nei progetti di consulenza',
+            'achievement_4_stat': '+35% medio',
+
+            // Hiring section
+            'hiring_title': 'Processo di Assunzione',
+            'hiring_subtitle': 'Come lavoro per garantire il tuo successo',
+            'process_step_1_title': 'Richiesta del Cliente',
+            'process_step_1_desc': 'Mi racconti le tue esigenze e obiettivi specifici',
+            'process_step_2_title': 'Riunione di Specificazione',
+            'process_step_2_desc': 'Analizziamo in dettaglio i requisiti del progetto',
+            'process_step_3_title': 'Presentazione della Proposta',
+            'process_step_3_desc': 'Elaboro una soluzione personalizzata con ambito e costi',
+            'process_step_4_title': 'Conferma del Servizio',
+            'process_step_4_desc': 'Firmiamo l\'accordo e iniziamo la pianificazione',
+            'process_step_5_title': 'Implementazione',
+            'process_step_5_desc': 'Eseguo il progetto con monitoraggio continuo',
+            'pricing_title': 'Informazioni sui Costi',
+            'pricing_recruitment': 'Reclutamento & Selezione',
+            'pricing_consulting': 'Consulenza Specializzata',
+            'pricing_price': 'Personalizzato',
+            'pricing_item_1': 'Garanzia di 3 mesi',
+            'pricing_item_2': 'Processo di selezione completo',
+            'pricing_item_3': 'Consegna di report dettagliati',
+            'pricing_item_4': 'Analisi iniziale senza costi',
+            'pricing_item_5': 'Proposta dettagliata',
+            'pricing_item_6': 'Monitoraggio post-implementazione',
+
+            // Gallery section
+            'gallery_title': 'I Miei Progetti',
+            'gallery_subtitle': 'Esperienza tangibile in azione',
+            'gallery_item_1_title': 'Kit Compleanno',
+            'gallery_item_1_category': 'Cultura',
+            'gallery_item_2_title': 'Design per la Festa della Donna',
+            'gallery_item_2_category': 'Comunicazione Interna',
+            'gallery_item_3_title': 'Attività per la Giornata dei Bambini',
+            'gallery_item_3_category': 'Responsabilità Sociale - Interna',
+            'gallery_item_4_title': 'Anniversario',
+            'gallery_item_4_category': 'Cultura',
+            'gallery_item_5_title': 'Olimpiadi',
+            'gallery_item_5_category': 'Cultura',
+            'gallery_item_6_title': 'Fiera del Lavoro',
+            'gallery_item_6_category': 'Selezione e Reclutamento',
+
+            // Contact section
+            'contact_title': 'Contatto Diretto',
+            'contact_subtitle': 'Sono pronta a trasformare la gestione del tuo talento',
+            'contact_heading': 'Parliamo del tuo progetto',
+            'contact_description': 'Contattami per sapere come posso aiutarti a raggiungere i tuoi obiettivi in Risorse Umane.',
+            'contact_whatsapp_latam': 'WhatsApp LATAM',
+            'contact_whatsapp_eu': 'WhatsApp Europa',
+            'contact_whatsapp_action': 'Scrivi su WhatsApp',
+            'contact_email': 'Email Diretta',
+            'contact_email_action': 'Invia Email'
+        },
+        'hr': {
+            // General titles and texts
+            'title': 'SAB Consulting - Specijalist za Ljudske Resurse',
+            'hero_title': 'SAB Consulting',
+            'hero_subtitle': 'Transformacija Upravljanja Talentima',
+            'hero_description': 'Inovativna rješenja za Ljudske Resurse za jačanje vaše organizacije',
+            'footer_text': '© 2023 SAB Consulting. Sva prava pridržana.',
+            'footer_tagline': 'Specijalist za Transformaciju Ljudskih Resursa',
+            'footer_links_title': 'Brze Poveznice',
+            'footer_legal_title': 'Pravno',
+            'footer_rights': 'Sva prava pridržana.',
+            'footer_specialization': 'Specijalizirano savjetovanje za Ljudske Resurse',
+
+            // Navigation
+            'nav_profile': 'Profil',
+            'nav_services': 'Usluge',
+            'nav_achievements': 'Postignuća',
+            'nav_process': 'Proces',
+            'nav_gallery': 'Galerija',
+            'nav_contact': 'Kontakt',
+
+            // Profile section
+            'profile_title': 'Profesionalni Profil',
+            'profile_subtitle': 'Upoznaj me',
+            'profile_name': 'Sasha Arbe',
+            'profile_intro': 'Ovo je ono što trebate znati o meni:',
+            'profile_item_1': 'Profesionalna psihologinja s više od 9 godina u HR-u',
+            'profile_item_2': 'Specijalizirana za Organizacijski Razvoj, Ljude i Operacije',
+            'profile_item_3': 'Radila sam u sektorima: farma, NGO, maloprodaja, masovna potrošnja, financije, komercijala, infrastruktura i savjetovanje',
+            'profile_item_4': 'Moje vještine: Rješavanje problema, Brza prilagodljivost, Kritičko razmišljanje, Komunikacija, Donošenje odluka, Planiranje i Upravljanje promjenama',
+            'profile_badge': 'Specijalist za HR',
+            'stat_experience': 'Godina Iskustva',
+            'stat_projects': 'Završenih Projekata',
+            'stat_sectors': 'Opsluženih Sektora',
+
+            // Services section
+            'services_title': 'Moje Specijalizirane Usluge',
+            'services_subtitle': 'Bit ću tvoja desna ruka u HR području',
+            'service_1_title': 'Organizacijski Razvoj',
+            'service_1_desc': 'Dijagnosticram, dizajniram i redizajniram strukture, procese i uloge kako bih uskladila vašu organizaciju sa strategijom i maksimizirala performanse.',
+            'service_2_title': 'Organizacijska Klima i Kultura',
+            'service_2_desc': 'Dijagnosticram radnu klimu i jačam korporativnu kulturu za izgradnju inkluzivnih, predanih i visokoučinkovitih radnih okruženja.',
+            'service_3_title': 'Obuka i Učenje',
+            'service_3_desc': 'Dizajniram i provodim sveobuhvatna rješenja za učenje: dijagnozu potreba, godišnji plan obuke, programe mekih i tehničkih vještina, te prilagođene virtualne kampuse za razvoj potencijala vašeg tima.',
+            'service_4_title': 'Interna Komunikacija',
+            'service_4_desc': 'Dizajniram i provodim strategije interne komunikacije za usklađivanje timova, jačanje predanosti i osiguravanje da poruka stigne jasno i učinkovito do svih suradnika.',
+            'service_5_title': 'Upravljanje Promjenama',
+            'service_5_desc': 'Dizajniram i provodim strategiju upravljanja promjenama za vaše transformacijske projekte, primjenjujući ADKAR® metodologiju tvrtke Prosci, kako bih osigurala da vaši timovi učinkovito usvoje promjene i da se rezultati održe tijekom vremena.',
+            'service_6_title': 'Regrutacija i Selekcija',
+            'service_6_desc': 'Dizajniram i upravljam procesima privlačenja i selekcije talenata koji jamče najbolji kulturni i profesionalni fit, smanjujući fluktuaciju i ubrzavajući integraciju.',
+            'services_cta': 'Trebate personaliziranu uslugu?',
+            'services_button': 'Kontaktirajte Sad',
+
+            // Achievements section
+            'achievements_title': 'Istaknuta Postignuća',
+            'achievements_subtitle': 'Opipljivi rezultati koji dokazuju moju stručnost',
+            'achievement_1_title': 'Zadovoljstvo Klimom',
+            'achievement_1_desc': 'Poraslo s 30% na 98% u manje od 1 godine',
+            'achievement_2_title': 'GPTW Priznanje',
+            'achievement_2_desc': '5 uzastopnih godina kao Great Place to Work',
+            'achievement_2_badge': 'Međunarodno Priznanje',
+            'achievement_3_title': 'Zadržavanje Talenta',
+            'achievement_3_desc': 'S 23% na 99% zaposlenika odlučilo je ostati u tvrtki',
+            'achievement_4_title': 'Optimizacija Troškova',
+            'achievement_4_desc': 'Prosječne uštede od 35% na konzultantskim projektima',
+            'achievement_4_stat': '+35% prosjek',
+
+            // Hiring section
+            'hiring_title': 'Proces Zapošljavanja',
+            'hiring_subtitle': 'Kako radim kako bih osigurao vaš uspjeh',
+            'process_step_1_title': 'Zahtjev Klijenta',
+            'process_step_1_desc': 'Kažete mi svoje specifične potrebe i ciljeve',
+            'process_step_2_title': 'Sastanak Specifikacije',
+            'process_step_2_desc': 'Detaljno analiziramo zahtjeve projekta',
+            'process_step_3_title': 'Prezentacija Prijedloga',
+            'process_step_3_desc': 'Izrađujem personalizirano rješenje s opsegom i troškovima',
+            'process_step_4_title': 'Potvrda Usluge',
+            'process_step_4_desc': 'Potpisujemo ugovor i započinjemo planiranje',
+            'process_step_5_title': 'Implementacija',
+            'process_step_5_desc': 'Izvršavam projekt s kontinuiranim praćenjem',
+            'pricing_title': 'Informacije o Cijenama',
+            'pricing_recruitment': 'Regrutacija & Selekcija',
+            'pricing_consulting': 'Specijalizirano Savjetovanje',
+            'pricing_price': 'Personalizirano',
+            'pricing_item_1': 'Garancija od 3 mjeseca',
+            'pricing_item_2': 'Kompletan proces selekcije',
+            'pricing_item_3': 'Isporuka detaljnih izvješća',
+            'pricing_item_4': 'Početna analiza bez troškova',
+            'pricing_item_5': 'Detaljan prijedlog',
+            'pricing_item_6': 'Praćenje nakon implementacije',
+
+            // Gallery section
+            'gallery_title': 'Moji Projekti',
+            'gallery_subtitle': 'Oplipljivo iskustvo na djelu',
+            'gallery_item_1_title': 'Rođendanski Paket',
+            'gallery_item_1_category': 'Kultura',
+            'gallery_item_2_title': 'Dizajn za Dan Žena',
+            'gallery_item_2_category': 'Interna Komunikacija',
+            'gallery_item_3_title': 'Aktivnost za Dan Djeteta',
+            'gallery_item_3_category': 'Interna Društvena Odgovornost',
+            'gallery_item_4_title': 'Godišnjica',
+            'gallery_item_4_category': 'Kultura',
+            'gallery_item_5_title': 'Olimpijada',
+            'gallery_item_5_category': 'Kultura',
+            'gallery_item_6_title': 'Sajam Poslova',
+            'gallery_item_6_category': 'Selekcija i Regrutacija',
+
+            // Contact section
+            'contact_title': 'Izravni Kontakt',
+            'contact_subtitle': 'Spremna sam transformirati upravljanje vašim talentima',
+            'contact_heading': 'Razgovarajmo o vašem projektu',
+            'contact_description': 'Kontaktirajte me da saznate kako vam mogu pomoći u postizanju vaših HR ciljeva.',
+            'contact_whatsapp_latam': 'WhatsApp LATAM',
+            'contact_whatsapp_eu': 'WhatsApp Europa',
+            'contact_whatsapp_action': 'Pišite putem WhatsAppa',
+            'contact_email': 'Izravni Email',
+            'contact_email_action': 'Pošaljite Email'
         }
     };
 
@@ -264,6 +500,26 @@ document.addEventListener('DOMContentLoaded', function() {
             galleryImages[4].alt = t['gallery_item_5_title'] + ' - ' + t['gallery_item_5_category'];
             galleryImages[5].alt = t['gallery_item_6_title'] + ' - ' + t['gallery_item_6_category'];
         }
+
+        // Actualizar el label del idioma actual en el toggle
+        const currentLangLabel = document.getElementById('currentLangLabel');
+        if (currentLangLabel) {
+            const langMap = {
+                'es': 'ESP',
+                'en': 'ENG',
+                'it': 'ITA',
+                'hr': 'HRV'
+            };
+            currentLangLabel.textContent = langMap[lang] || 'ESP';
+        }
+
+        // Actualizar clase active en las opciones del menú
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-lang') === lang) {
+                btn.classList.add('active');
+            }
+        });
 
         // Guardar preferencia
         localStorage.setItem('preferredLanguage', lang);
@@ -311,21 +567,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ==================== CONFIGURAR BOTONES DE IDIOMA ====================
-    function setupLanguageButtons() {
-        const buttons = document.querySelectorAll('.lang-btn');
+    // ==================== CONFIGURAR SELECTOR DE IDIOMA DESPLEGABLE ====================
+    function setupLanguageDropdown() {
+        const toggle = document.getElementById('langToggle');
+        const menu = document.getElementById('langMenu');
+        const options = document.querySelectorAll('.lang-option');
         
-        buttons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Remover clase active de todos los botones
-                buttons.forEach(btn => btn.classList.remove('active'));
+        if (!toggle || !menu) return;
+
+        // Abrir/cerrar menú al hacer clic en el toggle
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menu.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+
+        // Cerrar menú al seleccionar un idioma
+        options.forEach(option => {
+            option.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
                 
-                // Añadir clase active al botón clickeado
+                // Remover active de todas las opciones
+                options.forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
                 
-                // Cambiar idioma
-                const lang = this.getAttribute('data-lang');
+                // Aplicar traducción
                 applyTranslation(lang);
+                
+                // Cerrar menú
+                menu.classList.remove('open');
+                toggle.classList.remove('open');
                 
                 // Track event
                 if (typeof gtag !== 'undefined') {
@@ -336,6 +607,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.language-dropdown')) {
+                menu.classList.remove('open');
+                toggle.classList.remove('open');
+            }
+        });
+
+        // Cerrar menú con tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                menu.classList.remove('open');
+                toggle.classList.remove('open');
+            }
+        });
     }
 
     // ==================== VERIFICACIÓN DE GOOGLE ANALYTICS ====================
@@ -345,7 +632,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
         
-        // Verificar que GA esté cargado correctamente
         if (typeof window.dataLayer === 'undefined') {
             console.error('Google Analytics dataLayer is not defined');
             return false;
@@ -363,30 +649,25 @@ document.addEventListener('DOMContentLoaded', function() {
             linkedinLink.addEventListener('click', function(e) {
                 console.log('LinkedIn click detected - starting tracking process');
                 
-                // Prevenir navegación inmediata para dar tiempo al tracking
                 e.preventDefault();
                 
                 const linkedinUrl = this.href;
                 
-                // Verificar si Google Analytics está disponible
                 if (typeof gtag !== 'undefined') {
                     console.log('Sending event to Google Analytics...');
                     
-                    // Enviar evento a Google Analytics con callback
                     gtag('event', 'click', {
                         'event_category': 'Social',
                         'event_label': 'LinkedIn Icon Click',
                         'event_callback': function() {
                             console.log('LinkedIn click tracked successfully - navigating to LinkedIn');
-                            // Redirigir después de que GA reciba el evento
                             window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
                         },
-                        'transport_type': 'beacon' // Usar beacon para mejor confiabilidad
+                        'transport_type': 'beacon'
                     });
                     
                     console.log('Event sent to Google Analytics');
                     
-                    // Fallback: redirigir después de 500ms si el callback falla
                     setTimeout(function() {
                         console.log('Fallback navigation to LinkedIn');
                         window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
@@ -394,7 +675,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                 } else {
                     console.warn('Google Analytics not available - direct navigation');
-                    // Si GA no está disponible, navegar directamente
                     window.open(linkedinUrl, '_blank', 'noopener,noreferrer');
                 }
             });
@@ -414,7 +694,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     const isLinkedIn = url.includes('linkedin.com');
                     
                     if (isLinkedIn && this.id !== 'linkedin-track') {
-                        // Solo trackear si no es el enlace flotante que ya tiene su propio tracking
                         return;
                     }
                     
@@ -441,7 +720,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 menuBtn.classList.toggle('active');
             });
 
-            // Cerrar menú al hacer clic en un enlace
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
@@ -453,28 +731,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ==================== SCROLL SUAVE Y NAVEGACIÓN ====================
     function setupSmoothScroll() {
-        // Configurar scroll suave (excluyendo el LinkedIn flotante)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            if (!anchor.closest('.floating-linkedin') && !anchor.classList.contains('lang-btn')) {
+            if (!anchor.closest('.floating-linkedin') && !anchor.classList.contains('lang-option') && !anchor.closest('.language-dropdown')) {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const target = document.querySelector(targetId);
                     if (target) {
-                        const offsetTop = target.offsetTop - 80; // Ajustar para la navegación fija
+                        const offsetTop = target.offsetTop - 80;
                         window.scrollTo({
                             top: offsetTop,
                             behavior: 'smooth'
                         });
-                        
-                        // Actualizar URL
                         history.pushState(null, null, targetId);
                     }
                 });
             }
         });
 
-        // Navegación fija y activa
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-links a');
         
@@ -513,14 +787,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         };
         
-        // Inicializar animaciones
         document.querySelectorAll('.service-card, .achievement-card, .gallery-item, .process-step').forEach((el, i) => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
         });
         
-        // Ejecutar al cargar y al hacer scroll
         animateOnScroll();
         window.addEventListener('scroll', animateOnScroll);
     }
@@ -538,7 +810,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 modal.querySelector('.modal-content').alt = img.alt;
                 modal.querySelector('.caption').textContent = img.alt;
                 
-                // Track event
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'gallery_open', {
                         'event_category': 'Gallery',
@@ -572,7 +843,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        // Observar todas las secciones
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
@@ -590,14 +860,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ==================== OPTIMIZACIONES DE RENDIMIENTO ====================
     function setupPerformanceOptimizations() {
-        // Precargar imágenes críticas
         const criticalImages = ['ASSETS/sasha-profile.jpg'];
         criticalImages.forEach(src => {
             const img = new Image();
             img.src = src;
         });
 
-        // Evitar layout shifts
         document.querySelectorAll('img').forEach(img => {
             if (!img.hasAttribute('width') || !img.hasAttribute('height')) {
                 const width = img.naturalWidth || 300;
@@ -608,34 +876,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ==================== DEBUG PARA MONITOREAR EVENTOS ====================
-    function monitorGtagEvents() {
-        if (typeof gtag === 'undefined') return;
-        
-        const originalGtag = window.gtag;
-        window.gtag = function() {
-            console.log('GTag Event Called:', arguments);
-            return originalGtag.apply(this, arguments);
-        };
-    }
-
     // ==================== INICIALIZACIÓN ====================
     function init() {
         console.log('Initializing website...');
         
-        // Verificar Google Analytics primero
         if (!verifyGoogleAnalytics()) {
             console.warn('Google Analytics not loaded properly - some tracking may not work');
         }
         
-        // Opcional: Activar debug de eventos (quitar el comentario para activar)
-        // monitorGtagEvents();
+        // Configurar selector de idioma desplegable
+        setupLanguageDropdown();
         
-        // Configuraciones existentes...
-        setupLanguageButtons();
-        
+        // Cargar idioma guardado
         const savedLang = localStorage.getItem('preferredLanguage') || 'es';
-        document.querySelector(`.lang-btn[data-lang="${savedLang}"]`).classList.add('active');
+        
+        // Marcar la opción activa en el menú
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            if (btn.getAttribute('data-lang') === savedLang) {
+                btn.classList.add('active');
+            }
+        });
+        
+        // Actualizar el label del toggle
+        const currentLangLabel = document.getElementById('currentLangLabel');
+        if (currentLangLabel) {
+            const langMap = {
+                'es': 'ESP',
+                'en': 'ENG',
+                'it': 'ITA',
+                'hr': 'HRV'
+            };
+            currentLangLabel.textContent = langMap[savedLang] || 'ESP';
+        }
+        
+        // Aplicar traducción
         applyTranslation(savedLang);
         
         setupMobileMenu();
@@ -645,14 +919,9 @@ document.addEventListener('DOMContentLoaded', function() {
         setupIntersectionObserver();
         setupImageFallbacks();
         setupPerformanceOptimizations();
-        
-        // NUEVO: Configurar tracking de LinkedIn (IMPORTANTE)
         setupLinkedInTracking();
-        
-        // Configurar tracking para otros enlaces externos
         setupExternalLinkTracking();
         
-        // Configurar scroll del hero
         const scrollIndicator = document.querySelector('.hero-scroll-indicator');
         if (scrollIndicator) {
             scrollIndicator.addEventListener('click', () => {
@@ -673,6 +942,5 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('LinkedIn tracking is active');
     }
 
-    // Iniciar la aplicación
     init();
 });
